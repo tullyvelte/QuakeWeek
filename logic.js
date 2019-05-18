@@ -34,7 +34,7 @@ function chooseColor(magnitude) {
 
 function createFeatures(earthquakeData) {
     function onEachFeature(feature, layer) {
-        var months = ['Jan','Feb','Mar','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+        var months = ['Jan','Feb','March', 'April','May','June','July','Aug','Sep','Oct','Nov','Dec']
         var days = ['Sun','Mon','Tues','Wed','Thu','Fri','Sat']
         var timestamp = new Date(feature.properties.time);
         var day = days[timestamp.getDay()];
